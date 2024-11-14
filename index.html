@@ -4,425 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News Section</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
 
-body {
-  background-color: #f8f9fa;
-}
-
-.news-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.news-section h1 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #333;
-}
-
-.news-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.news-card {
-  background: #f1f1f1;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-}
-
-.news-card img {
-  width: 100%;
-  height: auto;
-}
-
-.news-content {
-  padding: 15px;
-}
-
-.date {
-  background: #78c257;
-  color: #fff;
-  font-size: 0.9rem;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 1.2rem;
-  margin: 10px 0;
-  color: #333;
-}
-
-.read-more {
-  color: #007bff;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-}
-
-.media-updates {
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-}
-
-.date-badge {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 5px 10px;
-  font-size: 12px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 4px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card h3 {
-  font-size: 18px;
-  margin: 10px;
-}
-
-.card p {
-  font-size: 14px;
-  margin: 10px;
-  color: #666;
-}
-
-
-
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    
-    height: 100vh;
-    background-color: #f8f9fa;
-}
-
-/* Testimonials Section Styling */
-.testimonials {
-    text-align: center;
-    color: #333;
-  
-}
-
-.section-title {
-    color: #88c057;
-    font-size: 1rem;
-    margin: 0;
-  
-}
-
-.section-subtitle {
-    font-size: 1.8rem;
-    margin-top: 5px;
-    
-}
-
-/* Testimonial Card Styling */
-.testimonial-card {
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    position: relative;
-}
-
-.testimonial-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-
-.testimonial-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.testimonial-name {
-    font-size: 1.2rem;
-    color: #0056b3;
-    margin: 0;
-}
-
-.testimonial-role {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 5px 0;
-}
-
-.testimonial-text {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #555;
-    padding: 0 20px;
-    text-align: center;
-}
-
-/* Navigation Buttons Styling */
-.testimonial-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.nav-button {
-    background-color: #88c057;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #76a348;
-}
-
-.arrow-left, .arrow-right {
-    pointer-events: none;
-}
-
-
-.subscribe {
-  background: #007bff;
-  color: #fff;
-  text-align: center;
-  padding: 30px 0;
-}
-
-.subscribe input {
-  padding: 10px;
-  width: 300px;
-  margin-right: 10px;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px;
-}
-
-.footer-logo img {
-  width: 100px;
-}
-
-.footer-links h3 {
-  margin-bottom: 10px;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 5px;
-}
-
-.footer-links ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 20px;
-}
-.leg{
-    display: inline-block;
-}
-
-
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.statistics-section {
-  background-color: #0056a5;
-  color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
-  position: relative;
-}
-
-.statistics-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('wave-pattern.png') no-repeat center;
-  background-size: cover;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-.statistics-container {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
-  flex-wrap: wrap;
-  z-index: 2;
-  position: relative;
-}
-
-.stat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  max-width: 200px;
-}
-
-.stat-item .icon img {
-  width: 60px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.stat-item h3 {
-  font-size: 24px;
-  margin: 10px 0 5px;
-}
-
-.stat-item p {
-  font-size: 16px;
-  margin: 0;
-  color: #b2d1f0;
-}
-
-
-
-.projects-section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.projects-section h2 {
-  font-size: 28px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.project-item {
-  background-color: #f4f8fb;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-  transform: translateY(-10px);
-   box-shadow: 0 6px 12px rgba(0, 128, 0, 0.2); /* Slightly darker green shadow on hover */
-  
-  background-color: rgba(0, 0, 255, 0.1); /* /* Slightly darker green shadow on hover */
-  
-}
-
-.project-item .icon img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-.project-item h3 {
-  font-size: 20px;
-  color: #007bff;
-  margin: 0 0 10px;
-}
-
-.project-item p {
-  font-size: 14px;
-  color: #555;
-  line-height: 1.6;
-  margin: 0;
-}
 </style>
 <body>
 <section class="projects-section">
     <h2>Other Projects</h2>
-    <div class="project-container">
-      <div class="project-item">
+    <div class="project-container"
+      <div class="project-item"
         <div class="icon"><img src="hepatitis-icon.png" alt="Hepatitis Icon"></div>
         <h3>Hepatitis</h3>
         <p>Saylani Welfare has also set up a clinic for the best treatment of hepatitis patients where hepatitis patients are being treated.</p>
@@ -496,28 +86,56 @@ body {
     <div class="grid-container">
       <div class="card">
         <div class="date-badge">Thu Oct 17 2024</div>
-        <img src="path-to-image-1.jpg" alt="Media Image">
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1728225865/website-images/dynamic/f550b3f7-814a-43c9-8e29-e0f825c25991.png" alt="Media Image">
         <h3>Empowering Pakistan's Tech Future with Saylani's SMIT Program | Gitex Global</h3>
         <p>#Organisation</p>
       </div>
 
       <div class="card">
         <div class="date-badge">Thu Oct 17 2024</div>
-        <img src="path-to-image-2.jpg" alt="Media Image">
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1728227407/website-images/dynamic/a858f76e-6317-4a48-a9ec-27d55ee908fb.png" alt="Media Image">
+        <h3>Empowering Pakistan's Tech Future with Saylani's SMIT Program | Gitex Global</h3>
+        <p>#Organisation</p>
+      </div>
+
+      <div class="card">
+        <div class="date-badge">Thu Oct 17 2024</div>
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1729173280/website-images/dynamic/5b0e8edb-5db9-4cc4-9b36-79967f12841a.png" alt="Media Image">
+        <h3>Empowering Pakistan's Tech Future with Saylani's SMIT Program | Gitex Global</h3>
+        <p>#Organisation</p>
+      </div>
+
+      <div class="card">
+        <div class="date-badge">Thu Oct 17 2024</div>
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1729174555/website-images/dynamic/1934b974-e7e2-4adc-9897-e03c25e4daf1.png" alt="Media Image">
+        <h3>Empowering Pakistan's Tech Future with Saylani's SMIT Program | Gitex Global</h3>
+        <p>#Organisation</p>
+      </div>
+
+      <div class="card">
+        <div class="date-badge">Thu Oct 17 2024</div>
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1726838940/website-images/dynamic/c49f871a-a8d3-4a58-a40a-53a03d69f028.png" alt="Media Image">
+        <h3>Empowering Pakistan's Tech Future with Saylani's SMIT Program | Gitex Global</h3>
+        <p>#Organisation</p>
+      </div>
+
+      <div class="card">
+        <div class="date-badge">Thu Oct 17 2024</div>
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1728224848/website-images/dynamic/aee01074-6fe9-4bff-aec9-0c8b6133904d.png" alt="Media Image">
         <h3>Learn Turkish Language with Saylani | Enroll Now</h3>
         <p>#Organisation</p>
       </div>
 
       <div class="card">
         <div class="date-badge">Sun Oct 06 2024</div>
-        <img src="path-to-image-3.jpg" alt="Media Image">
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1728225401/website-images/dynamic/f2dddb69-7f09-4155-8d56-821a00343dc8.png" alt="Media Image">
         <h3>Grand Opening of Saylani Flagship Branch at Bahria Town Karachi</h3>
         <p>#Organisation</p>
       </div>
 
       <div class="card">
         <div class="date-badge">Sun Oct 06 2024</div>
-        <img src="path-to-image-4.jpg" alt="Media Image">
+        <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1728225743/website-images/dynamic/fbf3bb3b-5dcc-41a9-9e47-8f8ccebc4f95.png" alt="Media Image">
         <h3>System Design & Architecture Course | Saylani Mass IT Training</h3>
         <p>#Organisation</p>
       </div>
@@ -531,7 +149,7 @@ body {
   <h1>News</h1>
   <div class="news-grid">
     <div class="news-card">
-      <img src="news1.jpg" alt="News Image">
+      <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1726903971/website-images/dynamic/bdbb9743-aef5-43bf-ab69-3ff5370b3e71.jpg" alt="News Image">
       <div class="news-content">
         <span class="date">Wed Sep 18 2024</span>
         <h2>Beginning of a New Era In Tech, Saylani Welfare Za...</h2>
@@ -540,7 +158,7 @@ body {
     </div>
 
     <div class="news-card">
-      <img src="news2.jpg" alt="News Image">
+      <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1725003538/website-images/dynamic/507cbaaa-4f0f-4326-9408-ebd7f855209c.jpg" alt="News Image">
       <div class="news-content">
         <span class="date">Wed Aug 28 2024</span>
         <h2>Mr. Zain Jeewanjee visited Saylani Welfare Interna...</h2>
@@ -549,7 +167,7 @@ body {
     </div>
 
     <div class="news-card">
-      <img src="news3.jpg" alt="News Image">
+      <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1725003977/website-images/dynamic/3fec1c61-e6bf-468e-8f77-54d3d0d0df3e.jpg" alt="News Image">
       <div class="news-content">
         <span class="date">Sat Aug 24 2024</span>
         <h2>Saylani, In collaboration with NADRA, launches th...</h2>
@@ -558,7 +176,7 @@ body {
     </div>
 
     <div class="news-card">
-      <img src="news4.jpg" alt="News Image">
+      <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1723541640/website-images/dynamic/13698684-6f9e-46ad-8021-f8aca6f2ef03.jpg" alt="News Image">
       <div class="news-content">
         <span class="date">Mon Aug 12 2024</span>
         <h2>Adnan Luawel (Prominent IT Leader & CEO Follo3) at...</h2>
