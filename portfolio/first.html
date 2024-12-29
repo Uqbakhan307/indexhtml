@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* General Styling */
+.service-list .service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-list .service-item img {
+  width: 25%;
+  max-width: 100px;
+  height: auto;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+
+.service-list .service-item h4,
+.service-list .service-item h5 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.service-list .service-item p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.service-list .service-item span {
+  font-size: 1.5rem;
+  margin-left: auto;
+  color: #ffc107;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .service-list .service-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-list .service-item img {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-list .service-item h4,
+  .service-list .service-item h5 {
+    font-size: 1rem;
+  }
+
+  .service-list .service-item p {
+    font-size: 0.8rem;
+  }
+
+  .service-list .service-item span {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-list .service-item img {
+    width: 75%;
+  }
+
+  .service-list .service-item h4,
+  .service-list .service-item h5 {
+    font-size: 0.9rem;
+  }
+
+  .service-list .service-item p {
+    font-size: 0.7rem;
+  }
+
+  .service-list .service-item span {
+    font-size: 1rem;
+  }
+}
+
+    @media (max-width: 768px) {
+        .hero-section h1 {
+            font-size: 2rem;
+        }
+        .hero-section .lead {
+            font-size: 1rem;
+        }
+        .hero-section .hero-img {
+            width: 100%;
+        }
+        .services h2 {
+            font-size: 1.5rem;
+        }
+        .services p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-section h1 {
+            font-size: 1.8rem;
+        }
+        .hero-section .lead {
+            font-size: 0.9rem;
+        }
+        .hero-section .hero-img {
+            width: 90%;
+        }
+        .services h2 {
+            font-size: 1.2rem;
+        }
+        .services p {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+<body>
+    <div class="service-list">
+        <div class="service-item">
+          <img src="https://img.freepik.com/premium-psd/laptop-web-screen-logo-mockup-ui-ux-design_253059-305.jpg" alt="UI/UX Design">
+          <div>
+            <h5>UI/UX Design</h5>
+            <p>117 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+        <div class="service-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7ShGz9XBf_buPlQk25VB6lG6NdnrTqNkmQ&s" alt="Front End Development">
+          <div>
+            <h4>Front End Develop</h4>
+            <p>84 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+        <div class="service-item">
+          <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Building-a-career-in-Mobile-App-Development.jpg" alt="Mobile App Development">
+          <div>
+            <h4>Mobile App Develop</h4>
+            <p>32 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+      </div>
+      
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-k k fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Uqba khan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container text-white text-center text-lg-left">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">I'm <span class="font-weight-bold">Uqba khan</span></h1>
+                    <p class="lead">A freelancer who provides services for digital programming and design content needs, for all businesses with more than 10 years of experience.</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-warning btn-lg">Show More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="WhatsApp Image 2024-12-19 at 1.01.43 AM.jpeg" alt="Profile Image" width="80%" class="img-fluid rounded-circle hero-img">
+                </div>
+
+
+                 <!-- Services Section -->
+    <section class="services py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="font-weight-bold mb-4">Services</h2>
+            <p>Let's build quality products in programming and design with my services</p>
+            <div class="social-icons mt-4">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+                <div class="service">
+                    <h2>Services</h2>
+                    <p>Let's build quality products in programming and design with my service</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                      </div>
+                </div>
+                 <!-- Services Section -->
+                 <div class="container d-flex justify-content-inline-block ">
+                    <div class="services-card">
+                      <h2>Services</h2>
+                      <p>Let's build quality products in programming and design with my services</p>
+                      <a href="#" class="show-more">Show more →</a>
+                      <div class="social-icons mt-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                      </div>
+                    </div>
+                  </div>
+              <!-- Services Section -->
+  <!-- Hero Section -->
+<section class="hero-section d-flex align-items-center">
+    <div class="container text-white text-center text-lg-left">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="uqba display-4">I'm <span class="font-weight-bold">Uqba Khan</span></h1>
+                <p class="lead">Hi, I'm Uqba Khan, a passionate and dedicated Front-End Developer eager to kickstart my career in web development. Recently, I have completed my studies and gained hands-on experience in building responsive and user-friendly websites. I am well-versed in modern front-end technologies like HTML, CSS, JavaScript, and frameworks like React.</p>
+                <div class="mt-4">
+                    <button class="btn btn-warning btn-lg">
+                        <span>Show more</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="WhatsApp_Image_2024-12-19_at_11.28.43_PM-removebg.png" alt="Profile Image" class="img-fluid hero-img w-75">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services py-5 text-white">
+    <div class="container text-center">
+        <h2 class="font-weight-bold mb-4">My Services</h2>
+        <p>I provide a variety of web development and design services to <br>help you create outstanding websites and applications.<br> Whether you're looking for a simple landing page or a complex web application, I'm here to help!</p>
+        <a href="#" class="btn btn-outline-warning mt-3">Show more →</a>
+        <div class="social-icons mt-4">
+            <a href="#" class="text-white mx-2"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="#" class="text-white mx-2"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="text-white mx-2"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/uqba-khan-77589532b" class="text-white mx-2"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</section>
+
+
+
+
+            </div>
+        </div>
+        <div class="service-list">
+            <div class="service-item">
+              <img src="https://img.freepik.com/premium-psd/laptop-web-screen-logo-mockup-ui-ux-design_253059-305.jpg" alt="UI/UX Design">
+              <div>
+                <h5>UI/UX Design</h5>
+                <p>117 Projects</p>
+              </div>
+              <span>&rarr;</span>
+            </div>
+            <div class="service-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7ShGz9XBf_buPlQk25VB6lG6NdnrTqNkmQ&s" alt="Front End Development">
+              <div>
+                <h4>Front End Develop</h4>
+                <p>84 Projects</p>
+              </div>
+              <span>&rarr;</span>
+            </div>
+            <div class="service-item">
+              <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Building-a-career-in-Mobile-App-Development.jpg" alt="Mobile App Development">
+              <div>
+                <h4>Mobile App Develop</h4>
+                <p>32 Projects</p>
+              </div>
+              <span>&rarr;</span>
+            </div>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <div class="service-list">
+        <div class="service-item">
+          <img src="https://img.freepik.com/premium-psd/laptop-web-screen-logo-mockup-ui-ux-design_253059-305.jpg" alt="UI/UX Design">
+          <div>
+            <h5>UI/UX Design</h5>
+            <p>117 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+        <div class="service-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA7ShGz9XBf_buPlQk25VB6lG6NdnrTqNkmQ&s" alt="Front End Development">
+          <div>
+            <h4>Front End Develop</h4>
+            <p>84 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+        <div class="service-item">
+          <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Building-a-career-in-Mobile-App-Development.jpg" alt="Mobile App Development">
+          <div>
+            <h4>Mobile App Develop</h4>
+            <p>32 Projects</p>
+          </div>
+          <span>&rarr;</span>
+        </div>
+      </div>
+</body>
+</html>

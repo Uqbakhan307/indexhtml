@@ -1,0 +1,198 @@
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@700&display=swap');
+ 
+
+/* Custom CSS for navbar */
+  .navbar-custom {
+    background-color: white;
+    color: black;
+
+  }
+  .navbar-custom .navbar-nav .nav-link {
+    
+    color: black;
+    text-decoration: none;
+  }
+  .navbar-custom .navbar-brand {
+    color: black;
+    font-weight: 900;
+  }
+  .navbar-custom .navbar-toggler-icon {
+    background-color: rgb(213, 225, 85);
+  }
+  .navbar-custom .navbar-nav .nav-link:hover {
+    text-decoration: underline rgb(250, 254, 27);
+  }
+  h2 > i{
+    color: yellow;
+    background-color: black;
+    border-radius: 90%;
+  }
+/*  text */
+h3{
+  color: rgb(255, 225, 0);
+  position: relative;
+  right: 10%;
+}
+
+
+   .ero-section .hero-img {
+    width: 350%;
+    max-width: 465px;
+    
+}
+.hero-section {
+  justify-content: space-around;
+  height: 10vh 0;
+
+  padding-top: 50px;
+display: inline;}
+span{
+  
+  text-decoration: underline #f0ad4e;
+}
+.hero-img {
+  max-width: 100%;
+  position: relative;
+  left: 40%;
+  top: 90%;
+  height: auto;
+}
+h1{
+  position: relative;
+    margin: 2px 0 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+
+/* From Uiverse.io by Mangesh636 */ 
+.btn {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(0, 119, 181);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(0, 119, 181);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+.btn span {
+  margin: 10px;
+}
+
+.btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+  border: 1px solid rgb(0, 119, 181);
+}
+
+button:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+/* From Uiverse.io by Yaya12085 */ 
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: #f0c74e;
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: black;
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .hero-section h1 {
+       font-size: 2rem;
+  }
+  .main{
+    flex-direction: column;
+  }
+   .hero-section{
+      flex-direction: column;}
+
+      .hero-section .hero-img { 
+        width: 100%; 
+   }
+  }
+
+  @media (max-width: 576px) {
+    .hero-section h1 {
+      font-size: 1.6rem;
+  }
+  .hero-section .lead {
+      font-size: 0.9rem;
+  }
+  .hero-section .hero-img {
+      width: 90%;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .hero-section{
+    display: flex;
+      flex-direction: column-reverse;
+  }
+  }
